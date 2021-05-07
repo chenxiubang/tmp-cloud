@@ -5,6 +5,7 @@
     <modules>
         <module>provide8001</module>
         <module>commom</module>
+        <module>clinet80</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -85,6 +86,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <!-- yang haoxiang not parent project-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
 
