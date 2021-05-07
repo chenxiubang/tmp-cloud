@@ -4,6 +4,8 @@ import com.cxb.entity.Obj;
 import com.cxb.entity.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -18,7 +20,8 @@ public class Controller8001 {
     public  R hello() {
         return new R(200,"hello",null);
     }
-    public R create(Obj obj) {
+    @PostMapping("/post")
+    public R create(@RequestBody Obj obj) {
         log.info(obj.toString());
         return new R(200,"ok",null);
     }
