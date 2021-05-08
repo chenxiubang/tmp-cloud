@@ -63,14 +63,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <!-- tools api common-->
-    <dependencies>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>commom</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
     <!--plugins-->
     <build>
